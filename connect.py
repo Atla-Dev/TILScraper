@@ -2,7 +2,7 @@ import sqlite3
 
 database='reddit_posts.db'
 create_table='CREATE_TABLE IF NOT EXISTS posts (id INTEGER PRIMARY KEY, title TEXT, score INTEGER, created_at TEXT);'
-insert_data='INSERT INTO posts (title, score, created_at) VALUES (?, ?, ?);'
+
 
 try:
     with sqlite3.connect(database) as conn:
